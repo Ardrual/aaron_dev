@@ -15,7 +15,7 @@ export default function Home() {
             Hi, I&apos;m Aaron
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Full Stack Developer | Building Amazing Web Experiences
+            CS Student @ UC Davis | Building AI-Powered Applications & Infrastructure
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" asChild>
@@ -26,13 +26,13 @@ export default function Home() {
             </Button>
           </div>
           <div className="flex gap-4 justify-center mt-8">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <a href="https://github.com/Ardrual" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/aaron-potter-611048344/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:contact@example.com" className="hover:text-primary transition-colors">
+            <a href="mailto:ajpotter6@gmail.com" className="text-foreground hover:text-primary transition-colors">
               <Mail className="w-6 h-6" />
             </a>
           </div>
@@ -45,26 +45,39 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
           <div className="space-y-4 text-lg text-muted-foreground">
             <p>
-              I&apos;m a passionate developer with experience in building modern web applications. 
-              I love creating clean, efficient, and user-friendly solutions.
+              I&apos;m a Computer Science student at UC Davis (graduating 2025) with minors in Philosophy and Music.
+              My work focuses on AI/ML systems, particularly RAG pipelines and LLM applications, combined with full-stack development.
             </p>
             <p>
-              My tech stack includes Next.js, React, TypeScript, Tailwind CSS, and more. 
-              I&apos;m always learning and exploring new technologies to stay at the forefront of web development.
+              I love building intelligent systems that solve real problems - from prototyping RAG assistants with LangChain
+              to setting up self-hosted infrastructure. My background in liberal arts gives me a unique perspective on
+              technology and human-centered design.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold">Next.js</div>
+              <div className="text-2xl font-bold text-foreground">Python</div>
             </div>
             <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold">React</div>
+              <div className="text-2xl font-bold text-foreground">LangChain</div>
             </div>
             <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold">TypeScript</div>
+              <div className="text-2xl font-bold text-foreground">FastAPI</div>
             </div>
             <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold">Tailwind</div>
+              <div className="text-2xl font-bold text-foreground">PostgreSQL</div>
+            </div>
+            <div className="text-center p-4 rounded-lg bg-background">
+              <div className="text-2xl font-bold text-foreground">React</div>
+            </div>
+            <div className="text-center p-4 rounded-lg bg-background">
+              <div className="text-2xl font-bold text-foreground">TypeScript</div>
+            </div>
+            <div className="text-center p-4 rounded-lg bg-background">
+              <div className="text-2xl font-bold text-foreground">Docker</div>
+            </div>
+            <div className="text-center p-4 rounded-lg bg-background">
+              <div className="text-2xl font-bold text-foreground">PyTorch</div>
             </div>
           </div>
         </div>
@@ -77,25 +90,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle>Project One</CardTitle>
-                <CardDescription>A modern web application</CardDescription>
+                <CardTitle>Gridmind RAG Assistant</CardTitle>
+                <CardDescription>AI-powered document Q&A system</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Built with Next.js and TypeScript. Features include real-time updates, 
-                  responsive design, and seamless user experience.
+                  Built a RAG pipeline using LangChain, Gemini embeddings, and Chroma to answer domain-specific
+                  questions with citations. Features FastAPI backend with pydantic schemas and React frontend.
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="#" className="flex items-center gap-1">
+                    <a href="https://github.com/Ardrual" className="flex items-center gap-1">
                       <Github className="w-4 h-4" />
                       Code
-                    </a>
-                  </Button>
-                  <Button size="sm" asChild>
-                    <a href="#" className="flex items-center gap-1">
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
                     </a>
                   </Button>
                 </div>
@@ -104,25 +111,19 @@ export default function Home() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Project Two</CardTitle>
-                <CardDescription>Full-stack solution</CardDescription>
+                <CardTitle>Raspberry Pi Homelab</CardTitle>
+                <CardDescription>Self-hosted infrastructure cluster</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  End-to-end application with authentication, database integration, 
-                  and modern UI components.
+                  Multi-node cluster with Docker, PostgreSQL/Redis, Pi-hole DNS, VPN access, and automated backups.
+                  Includes self-hosted Git repositories, Jenkins CI/CD, and container registry.
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="#" className="flex items-center gap-1">
+                    <a href="https://github.com/Ardrual" className="flex items-center gap-1">
                       <Github className="w-4 h-4" />
                       Code
-                    </a>
-                  </Button>
-                  <Button size="sm" asChild>
-                    <a href="#" className="flex items-center gap-1">
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
                     </a>
                   </Button>
                 </div>
@@ -131,25 +132,19 @@ export default function Home() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Project Three</CardTitle>
-                <CardDescription>Creative portfolio</CardDescription>
+                <CardTitle>BlakeGPT</CardTitle>
+                <CardDescription>Custom GPT-2 language model</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Showcase of design and development skills with interactive elements 
-                  and smooth animations.
+                  Trained a custom GPT-2 variant (6 layers, 1.9M parameters) on William Blake&apos;s works.
+                  Implemented custom BPE tokenizer and training pipeline using Hugging Face Transformers.
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="#" className="flex items-center gap-1">
+                    <a href="https://github.com/Ardrual" className="flex items-center gap-1">
                       <Github className="w-4 h-4" />
                       Code
-                    </a>
-                  </Button>
-                  <Button size="sm" asChild>
-                    <a href="#" className="flex items-center gap-1">
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
                     </a>
                   </Button>
                 </div>
@@ -167,7 +162,7 @@ export default function Home() {
             I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
           <Button size="lg" asChild>
-            <a href="mailto:contact@example.com" className="flex items-center gap-2 mx-auto w-fit">
+            <a href="mailto:ajpotter6@gmail.com" className="flex items-center gap-2 mx-auto w-fit">
               <Mail className="w-5 h-5" />
               Send me an email
             </a>

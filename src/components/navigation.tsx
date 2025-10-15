@@ -31,19 +31,19 @@ export function Navigation() {
         <div className="flex gap-6">
           <Link
             href="#about"
-            className="hover:text-primary transition-colors"
+            className="text-foreground hover:text-primary transition-colors"
           >
             About
           </Link>
           <Link
             href="#projects"
-            className="hover:text-primary transition-colors"
+            className="text-foreground hover:text-primary transition-colors"
           >
             Projects
           </Link>
           <Link
             href="#contact"
-            className="hover:text-primary transition-colors"
+            className="text-foreground hover:text-primary transition-colors"
           >
             Contact
           </Link>
