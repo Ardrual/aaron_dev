@@ -45,7 +45,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
           <div className="space-y-4 text-lg text-muted-foreground">
             <p>
-              I&apos;m a Computer Science student at UC Davis (graduating 2025) with minors in Philosophy and Music.
+              I&apos;m a sofware engineer with a Computer Science BS from UC Davis (graduated 2025) with minors in Philosophy and Music.
               My work focuses on AI/ML systems, particularly RAG pipelines and LLM applications, combined with full-stack development.
             </p>
             <p>
@@ -100,7 +100,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Ardrual" className="flex items-center gap-1">
+                    <a href="https://github.com/Ardrual/gridmind" className="flex items-center gap-1">
                       <Github className="w-4 h-4" />
                       Code
                     </a>
@@ -120,12 +120,6 @@ export default function Home() {
                   Includes self-hosted Git repositories, Jenkins CI/CD, and container registry.
                 </p>
                 <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Ardrual" className="flex items-center gap-1">
-                      <Github className="w-4 h-4" />
-                      Code
-                    </a>
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -142,7 +136,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Ardrual" className="flex items-center gap-1">
+                    <a href="https://huggingface.co/Ardrual/blake-model" className="flex items-center gap-1">
                       <Github className="w-4 h-4" />
                       Code
                     </a>
