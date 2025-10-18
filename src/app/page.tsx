@@ -15,7 +15,7 @@ export default function Home() {
             Hi, I&apos;m Aaron
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            CS BS from UC Davis | Building AI-Powered Applications & Infrastructure
+            CS BS from UC Davis
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" asChild>
@@ -45,8 +45,8 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
           <div className="space-y-4 text-lg text-muted-foreground">
             <p>
-            </p>  
-            <p>
+              This is my website. I'm not known for much of anything, but I like building things!
+              I'm especially interested in AI/ML, Philosophy, and Music.
             </p>
           </div>
         </div>
