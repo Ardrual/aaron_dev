@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 
 export default function Home() {
   return (
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="space-y-4 text-lg text-muted-foreground">
             <p>
               This is my website. I graduated from UC Davis with a degree in Computer Science in 2025. I spend way too much time reading, and love learning about and using new technologies.
-              I'm especially interested in AI/ML (though isn't everyone these days?), philosophy, and music.
+              I&apos;m especially interested in AI/ML (though isn&apos;t everyone these days?), philosophy, and music.
             </p>
           </div>
         </div>
