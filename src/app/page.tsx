@@ -45,8 +45,8 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
           <div className="space-y-4 text-lg text-muted-foreground">
             <p>
-              This is my website. I'm not known for much of anything, but I like building things!
-              I'm especially interested in AI/ML, Philosophy, and Music.
+              This is my website. I graduated from UC Davis with a degree in Computer Science in 2025. I spend way too much time reading, and love learning about and using new technologies.
+              I'm especially interested in AI/ML (though isn't everyone these days?), philosophy, and music.
             </p>
           </div>
         </div>
@@ -121,9 +121,7 @@ export default function Home() {
       <section id="contact" className="py-20 px-4 bg-muted/50">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-4xl font-bold mb-8">Get In Touch</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-          </p>
+          
           <Button size="lg" asChild>
             <a href="mailto:ajpotter6@gmail.com" className="flex items-center gap-2 mx-auto w-fit">
               <Mail className="w-5 h-5" />
