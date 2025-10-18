@@ -8,6 +8,7 @@ import rehypeHighlight from 'rehype-highlight'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkGfm from 'remark-gfm'
+import { Navigation } from '@/components/navigation'
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>
@@ -64,15 +65,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <div className="min-h-screen py-12 px-4">
-      <article className="max-w-3xl mx-auto">
-        {/* Back to blog link */}
-        <Link
-          href="/blog"
-          className="text-blue-600 hover:text-blue-800 mb-8 inline-block"
-        >
-          ← Back to blog
-        </Link>
+    <div className="min-h-screen">
+      <Navigation />
+      <div className="py-12 px-4 pt-24">
+        <article className="max-w-3xl mx-auto">
+          {/* Back to blog link */}
+          <Link
+            href="/blog"
+            className="text-blue-600 hover:text-blue-800 mb-8 inline-block"
+          >
+            ← Back to blog
+          </Link>
 
         {/* Post header */}
         <header className="mb-8">
@@ -116,7 +119,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             options={mdxOptions}
           />
         </div>
-      </article>
+        </article>
+      </div>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getSortedPosts } from '@/lib/blog'
 import { Metadata } from 'next'
+import { Navigation } from '@/components/navigation'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -11,7 +12,9 @@ export default function BlogPage() {
   const posts = getSortedPosts()
 
   return (
-    <div className="min-h-screen py-12 px-4">
+    <div className="min-h-screen">
+      <Navigation />
+      <div className="py-12 px-4 pt-24">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8">Blog</h1>
 
@@ -64,6 +67,7 @@ export default function BlogPage() {
             ))}
           </div>
         )}
+      </div>
       </div>
     </div>
   )
