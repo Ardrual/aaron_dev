@@ -31,6 +31,7 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed information about:
 
 - **Modern Stack**: Next.js 15, React 19, TypeScript, Tailwind CSS v4
 - **UI Components**: shadcn/ui for beautiful, customizable components
+- **MDX Blog**: Write blog posts with Markdown + React components
 - **Responsive**: Mobile-first design that works on all devices
 - **Dark Mode**: Automatic dark mode based on system preferences
 - **Performance**: Optimized with Turbopack and Server Components
@@ -43,3 +44,28 @@ All portfolio content can be easily customized in `src/app/page.tsx`. Update the
 - Skills
 - Contact details
 - Social media links
+
+## 📝 Blog
+
+Add new blog posts by creating `.mdx` files in `src/content/blog/`:
+
+```mdx
+---
+title: "Your Post Title"
+date: "2025-01-20"
+description: "A brief description"
+tags: ["tag1", "tag2"]
+author: "Your Name"
+published: true
+---
+
+# Your Content Here
+
+Write your post using Markdown, and use React components:
+
+<Callout type="info">
+This is a custom component!
+</Callout>
+```
+
+Custom components available: `Callout` (types: info, warning, error, success)

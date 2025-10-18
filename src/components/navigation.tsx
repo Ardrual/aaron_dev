@@ -47,6 +47,12 @@ export function Navigation() {
           >
             Contact
           </Link>
+          <Link
+            href="/blog"
+            className="text-foreground hover:text-primary transition-colors"
+          >
+            Blog
+          </Link>
         </div>
       </div>
     </nav>
