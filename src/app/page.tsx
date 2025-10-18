@@ -45,40 +45,9 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
           <div className="space-y-4 text-lg text-muted-foreground">
             <p>
-              I&apos;m a sofware engineer with a Computer Science BS from UC Davis (graduated 2025) with minors in Philosophy and Music.
-              My work focuses on AI/ML systems, particularly RAG pipelines and LLM applications, combined with full-stack development.
-            </p>
+            </p>  
             <p>
-              I love building intelligent systems that solve real problems - from prototyping RAG assistants with LangChain
-              to setting up self-hosted infrastructure. My background in liberal arts gives me a unique perspective on
-              technology and human-centered design.
             </p>
-          </div>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold text-foreground">Python</div>
-            </div>
-            <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold text-foreground">LangChain</div>
-            </div>
-            <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold text-foreground">FastAPI</div>
-            </div>
-            <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold text-foreground">PostgreSQL</div>
-            </div>
-            <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold text-foreground">React</div>
-            </div>
-            <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold text-foreground">TypeScript</div>
-            </div>
-            <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold text-foreground">Docker</div>
-            </div>
-            <div className="text-center p-4 rounded-lg bg-background">
-              <div className="text-2xl font-bold text-foreground">PyTorch</div>
-            </div>
           </div>
         </div>
       </section>
@@ -167,7 +136,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t">
         <div className="container mx-auto text-center text-muted-foreground">
-          <p>&copy; 2024 Aaron. Built with Next.js, Tailwind CSS, and shadcn/ui.</p>
+          <p>&copy; 2025 Aaron Potter. Built with Next.js, Tailwind CSS, and shadcn/ui.</p>
         </div>
       </footer>
     </div>
