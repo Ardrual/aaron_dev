@@ -12,7 +12,7 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center px-4 pt-20">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I&apos;m Aaron
+            Aaron Potter
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
             CS BS from UC Davis
