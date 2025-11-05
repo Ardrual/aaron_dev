@@ -59,17 +59,17 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle>Gridmind RAG Assistant</CardTitle>
-                <CardDescription>AI-powered document Q&A system</CardDescription>
+                <CardTitle>Vinyl Vault</CardTitle>
+                <CardDescription>AI-powered record collection management</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Built a RAG pipeline using LangChain, Gemini embeddings, and Chroma to answer domain-specific
-                  questions with citations. Features FastAPI backend with pydantic schemas and React frontend.
+                  Web app to catalog and manage vinyl record collections using AI image recognition.
+                  Built with Next.js, Tailwind CSS, and integrates with Discogs API for metadata.
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Ardrual/gridmind" className="flex items-center gap-1">
+                    <a href="https://github.com/Ardrual/vinyl-vault" className="flex items-center gap-1">
                       <Github className="w-4 h-4" />
                       Code
                     </a>
@@ -80,15 +80,21 @@ export default function Home() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Raspberry Pi Homelab</CardTitle>
-                <CardDescription>Self-hosted infrastructure cluster</CardDescription>
+                <CardTitle>Micrograd in Rust</CardTitle>
+                <CardDescription>Implementation of gradient descent and MLP in Rust</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Multi-node cluster with Docker, PostgreSQL/Redis, Pi-hole DNS, VPN access, and automated backups.
-                  Includes self-hosted Git repositories, Jenkins CI/CD, and container registry.
+                  Recreated Andrej Karpathy&apos;s Micrograd library in Rust to deepen understanding of backpropagation and neural networks.
+                  Explores Rust&apos;s ownership model while implementing core ML concepts.
                 </p>
                 <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Ardrual/micrograd-rust" className="flex items-center gap-1">
+                      <Github className="w-4 h-4" />
+                      Code
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
