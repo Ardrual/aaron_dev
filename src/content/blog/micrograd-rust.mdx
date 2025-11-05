@@ -1,0 +1,27 @@
+---
+title: "Writing Micrograd in Rust"
+date: "2025-11-05"
+description: "On implementing Micrograd in Rust"
+tags: ["ml, rust, zero-to-hero"]
+author: "Aaron"
+published: true
+---
+
+# Karpathy's Zero-to-Hero
+
+I've been working through and really getting a lot out of Karpathy's zero to hero course. I've so far just gone through the first video, but it really solidified ideas that were only kind of understood from my coursework. 
+Actually seeing how backpropagation was implemented in python made not just the code, but the underlying mathematical foundations much clearer.
+
+# Reimplementing
+
+However, there's still the same likelihood of having gaps in my model of how the code works, if I just follow a tutorial. There's a sort of sopoforic impact of really good explanations on the critical faculties that in my experience is best solved by building.
+So, I decided to try and reimplement Micrograd in Rust, since I've been wanting to learn more about Rust anyways. In one sense, this is a bad idea. Rust, as I know now, is very particular about how one handles variables with its borrow checking. The nature of the problem (essentially a graph with recursive calls down the graph) is one with lots of mutable states and shared pointers.
+
+This meant, running into some data structures that are pretty dissimilar to things I'd done in the python implementation. The most notable one was the Rc<RefCell<T>> structure. This solved the problem of having pointers to the previous values, which was necessary to make backpropagation work.
+Rc creates a pointer which allows multiple owners for one piece of data by incrementing and decrementing the count of active owners. The RefCell type allows for mutating the data with immutable references. Neither of these are strictly unsafe Rust, as I understand it, but they make some compiler checks runtime checks. Combining both of those, the ValueData struct was wrapped in a Value struct (which is just a Rc pointer to a RefClass for the ValueData struct) to create a more friendly API.
+
+Outside of that, there wasn't anything too groundbreaking! Rust's operator overloading was a bit more verbose as far as I can tell, compared to python's methods, but worked pretty similarly.
+
+# Future Steps
+
+I'm looking forward to implementing Makemore, and I'm debating which language to try and reimplement it in. Rust, again, is still the leading canditate, because there's some decent deep learning libraries for Rust, but I'll have to decide!
