@@ -1,0 +1,15 @@
+---
+title: "Music Generation with DSLs"
+date: "2025-12-01"
+description: "Experimenting with music generation"
+tags: ["AI, LLM, music"]
+author: "Aaron"
+published: true
+---
+
+As a musician, I've watched the development of models for music generation with a lot of interest (and a fair amount of trepidation as well). And, while the stuff they can do is undoubtedly impressive, I've been less struck than I have, by, say, AI writing and coding. Because, those aren't merely impressive apes of human work, but seem to me to show an impressive degree of reasoning, and fairly high level work.
+This led to the question of how one might leverage all the reasoning ability and musical knowledge that is latent in a SOTA model for generating music! So, I (with a lot of assistance from AI, because I'm not particularly expert in PL theory), made a basic DSL with an eye towards describing music in a way that is "closer to thought" than other forms of text based music notation.
+Lots exist, of course, but they're all trying to solve different problems. Music programming languages, like super collider, want to enable engaging with sound in a programmatic/algorithmic way. Engraving languages, like MusicXML, want to enable you to describe sheet music for mostly visual purposes. The closest is abc notation (and Gwern did some [similar experiments](https://gwern.net/gpt-2-music) back in the GPT-2 days), but it has several things that make it great for humans, but harder for LLMs.
+
+I'm planning to release the compiler and a description of the language soon, but I've been amazed at the success, and the different behaviors the models have. Claude seems to have a real knack for it, and when given the challenge to compose a larger piece, composed a four movement piece with remarkable thematic and motivic coherence.
+And this required no training, no substantial custom harnessing or anything like that. Just a small markdown guide and a prompt, and it went off. While the "sound quality" (being just midi) was inferior to models like Suno, I thought the musical coherence and interest and the ability to reflect on the piece was greater than most of what I see from that approach. And, it makes me wonder if this couldn't be a new paradigm for music generation models. We have great multimodal capacities in visual elements, and even in audio in some sense, but not musically. I don't know, this is highly speculative, but it seems to me that the conjunction of these two modes could allow for a compositional approach that is much more intelligent than we've seen til now. 
