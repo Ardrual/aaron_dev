@@ -26,7 +26,7 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
-          Aaron
+          Aaron Potter
         </Link>
         <div className="flex gap-6">
           <Link
