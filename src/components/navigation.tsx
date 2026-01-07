@@ -26,23 +26,23 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
-          Aaron
+          Aaron Potter
         </Link>
         <div className="flex gap-6">
           <Link
-            href="#about"
+            href="/#about"
             className="text-foreground hover:text-primary transition-colors"
           >
             About
           </Link>
           <Link
-            href="#projects"
+            href="/#projects"
             className="text-foreground hover:text-primary transition-colors"
           >
             Projects
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className="text-foreground hover:text-primary transition-colors"
           >
             Contact
