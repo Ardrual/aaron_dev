@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 pt-20">
+      <section className="min-h-screen flex items-center justify-center px-6 pt-20">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Aaron Potter
@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 bg-muted/50">
+      <section id="about" className="py-20 px-6 bg-muted/50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
           <div className="space-y-4 text-lg text-muted-foreground">
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-4">
+      <section id="projects" className="py-20 px-6">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -124,10 +124,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-muted/50">
+      <section id="contact" className="py-20 px-6 bg-muted/50">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-4xl font-bold mb-8">Get In Touch</h2>
-          
+
           <Button size="lg" asChild>
             <a href="mailto:ajpotter6@gmail.com" className="flex items-center gap-2 mx-auto w-fit">
               <Mail className="w-5 h-5" />
