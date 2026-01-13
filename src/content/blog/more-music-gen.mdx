@@ -1,0 +1,13 @@
+---
+title: "More thoughts on AI Music Generation"
+date: "2026-01-12"
+description: "How using LLM agents for music has informed my ideas about their capabilities"
+tags: ["AI, LLM, coding, music"]
+author: "Aaron"
+published: true
+---
+
+As I've done more experiments with [Melos](https://github.com/Ardrual/melos/), I've seen some interesting emergent behaviors from different models. I had Claude whip up a skill to use it with coding agents (allowing them to compile and check behavior), and its been very interesting trying to get them to compose interesting pieces.
+Claude Opus 4.5 remains notably better at composing. Gemini via Antigravity was also somewhat competent. Codex really struggles to do interesting stuff, it tends to be very literal. Which, of course, may be desirable behavior from a coding agent!
+It was especially interesting to see how they reaponded to attempts to have a more reflective composition process. Codex struggled, as, when given steps, it would compose and then write answers after composing, even though the steps are meant to guide composition. Gemini via Antigravity did better, creating an implementation plan, but still didn't reflect a ton on its ideads. Claude seemed to approach reflecting the best, though could likely be improved, perhaps with subagents.
+I also found that this was a very token intensive task. I will probably try to add structures to the language to reduce that, though to a great extent that's simply necessary since so much complex thought just has to be written out for an LLM based model (though I could maybe imagine a fine-tuned model would do better? Perhaps worth trying!)
