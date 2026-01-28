@@ -80,17 +80,17 @@ export default function Home() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Micrograd in Rust</CardTitle>
-                <CardDescription>Implementation of gradient descent and MLP in Rust</CardDescription>
+                <CardTitle>Melos</CardTitle>
+                <CardDescription>Domain-specific music notation language</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Recreated Andrej Karpathy&apos;s Micrograd library in Rust to deepen understanding of backpropagation and neural networks.
-                  Explores Rust&apos;s ownership model while implementing core ML concepts.
+                  A CLI-based music notation language and compiler built in Rust that generates MIDI files.
+                  Supports complex features like swung rhythms and multiple measures per line.
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Ardrual/micrograd-rust" className="flex items-center gap-1">
+                    <a href="https://github.com/ardrual/melos" className="flex items-center gap-1">
                       <Github className="w-4 h-4" />
                       Code
                     </a>
