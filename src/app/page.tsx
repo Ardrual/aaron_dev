@@ -54,34 +54,24 @@ export default function Home() {
 
       {/* Resume Section */}
       <section id="resume" className="py-20 px-6">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold mb-12 text-center">Resume</h2>
-          <div className="flex flex-col items-center">
-            <Card className="w-full max-w-2xl border-dashed border-2 bg-muted/30">
-              <CardHeader className="text-center pb-2">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FileText className="w-8 h-8 text-primary" />
-                </div>
-                <CardTitle className="text-2xl">Curriculum Vitae</CardTitle>
-                <CardDescription>
-                  My professional experience, education, and technical skills.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex flex-wrap gap-4 justify-center pt-6">
-                <Button size="lg" className="w-full sm:w-auto" asChild>
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <FileText className="w-5 h-5" />
-                    View PDF
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
-                  <a href="/resume.pdf" download className="flex items-center gap-2">
-                    <Download className="w-5 h-5" />
-                    Download PDF
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-6">Resume</h2>
+          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
+            My professional experience, education, and technical skills in a concise format.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button size="lg" className="px-8" asChild>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <FileText className="w-5 h-5" />
+                View PDF
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="px-8" asChild>
+              <a href="/resume.pdf" download className="flex items-center gap-2">
+                <Download className="w-5 h-5" />
+                Download PDF
+              </a>
+            </Button>
           </div>
         </div>
       </section>
