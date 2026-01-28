@@ -1,0 +1,74 @@
+\documentclass[a4paper,9pt]{extarticle}
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=0.75in}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+% Formatting
+\setlist{noitemsep}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+\begin{document}
+\pagestyle{empty}
+\begin{center}
+\textbf{\Large Aaron Potter}\\[2pt]
+San Diego, California \quad|\quad \href{mailto:ajpotter6@gmail.com}{ajpotter6@gmail.com} \quad|\quad \href{https://dev.aaronpotter.net}{dev.aaronpotter.net} \quad|\quad (619) 559-9786
+\end{center}
+\section*{SUMMARY}
+Software engineer with a CS degree from UC Davis and interdisciplinary background spanning computer science, philosophy, and music. Builds tools at the intersection of language design, machine learning, and systems infrastructure. Writes about AI and programming languages at \href{https://dev.aaronpotter.net/blog}{dev.aaronpotter.net/blog}.
+\section*{EXPERIENCE}
+\noindent
+\textbf{Website Manager} \hfill UC Davis\\
+\textit{Student Position} \hfill Jan 2023 -- Jun 2025
+\begin{itemize}
+    \item Managed and published content for department website using WordPress CMS.
+    \item Coordinated with staff on content scheduling, site organization, and accessibility compliance.
+\end{itemize}
+\section*{EDUCATION}
+\noindent
+\textbf{University of California, Davis} \hfill Sep 2022 -- Jun 2025\\
+B.S. Computer Science, Minors: Philosophy and Music
+
+\noindent
+\textbf{St. John's College, Santa Fe} \hfill Sep 2019 -- Jun 2020\\
+Liberal Arts --- Great Books program emphasizing close reading, logic, and analytical writing.
+\section*{SKILLS}
+\begin{itemize}
+    \item \textbf{Languages:} Python, Rust, C++, JavaScript/TypeScript, Java, SQL, PHP
+    \item \textbf{ML/AI:} PyTorch, Hugging Face Transformers, LangChain, OpenAI/Claude APIs, RAG pipelines
+    \item \textbf{Web \& Infra:} FastAPI, React, Next.js, Django, Docker, Linux, Git, CI/CD, PostgreSQL, Redis
+\end{itemize}
+\section*{PROJECTS}
+\noindent
+\textbf{\href{https://github.com/Ardrual/melos}{Melos} --- Music Notation Language} \hfill Rust
+\begin{itemize}
+    \item Designed and implemented a domain-specific language for music composition that compiles to MIDI, including parser (pest grammar), multi-part scores, time/key signatures, tuplets, and dynamics.
+    \item Used for original compositions exploring generative and algorithmic approaches to music.
+    \item Wrote about the design process and AI music generation experiments on \href{https://dev.aaronpotter.net/blog/music-generation-dsl}{personal blog}.
+\end{itemize}
+\noindent
+\textbf{\href{https://github.com/Ardrual/micrograd-rust}{micrograd-rust}} \hfill Rust
+\begin{itemize}
+    \item Reimplemented Karpathy's micrograd autograd engine in Rust with reverse-mode automatic differentiation.
+    \item Solved Rust ownership challenges for computational graph backpropagation and gradient accumulation.
+\end{itemize}
+\noindent
+\textbf{\href{https://huggingface.co/Ardrual/blake-model}{BlakeGPT}} \hfill Python, PyTorch
+\begin{itemize}
+    \item Trained custom GPT-2 variant (6 layers, 1.9M params) on William Blake's complete works from scratch.
+    \item Built custom BPE tokenizer and end-to-end training pipeline using PyTorch and Hugging Face Transformers.
+\end{itemize}
+\noindent
+\textbf{Gridmind RAG Assistant} \hfill Python, React
+\begin{itemize}
+    \item Built retrieval-augmented generation pipeline using LangChain, Gemini embeddings, and Chroma for domain-specific Q\&A with citations.
+    \item Implemented PDF ingestion, chunking, and embedding with FastAPI backend and React frontend.
+\end{itemize}
+\noindent
+\textbf{Homelab Infrastructure} \hfill Docker, Linux
+\begin{itemize}
+    \item Built multi-node distributed system on Raspberry Pis with Docker orchestration, PostgreSQL/Redis, Pi-hole DNS, VPN, self-hosted Git, Jenkins CI/CD, and automated backups.
+\end{itemize}
+\end{document}

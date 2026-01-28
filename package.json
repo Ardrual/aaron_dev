@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "./scripts/compile-resume.sh && next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "compile-resume": "./scripts/compile-resume.sh"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
